@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Index() {
+export default function Favoritos() {
     return (
         <div>
-            Pagina principal
+            Favoritos
         </div>
     )
 }
