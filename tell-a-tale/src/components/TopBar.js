@@ -98,7 +98,8 @@ export default function PrimarySearchAppBar(props) {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Mi cuenta</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Notificaciones</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Mis historias</MenuItem>
     </Menu>
   );
 
