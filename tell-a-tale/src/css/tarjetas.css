@@ -1,0 +1,13 @@
+.MuiCardContent-root{
+
+    background-color: rgb(55, 107, 104);
+}
+
+.historias{
+    display: flex;
+}
+
+.contenedorPrinc{
+    margin: auto;
+    width: max-content;
+}
