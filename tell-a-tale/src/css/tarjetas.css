@@ -4,6 +4,7 @@
 }
 
 .historias{
+    margin-top: 3%;
     display: flex;
 }
 
@@ -11,3 +12,4 @@
     margin: auto;
     width: max-content;
 }
+

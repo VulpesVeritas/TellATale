@@ -6,19 +6,14 @@ import '../css/tarjetas.css'
 export default function Index() {
     return (
         <div className='contenedorPrinc'>
-            
-                <div>
-                Pagina principal
+                <div className='carrusel'>
+                
                 </div>
                 <div className='historias' >
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
                     <ActionAreaCard></ActionAreaCard>
                 </div>
-            
-                
-            
-            
         </div>
     )
 }

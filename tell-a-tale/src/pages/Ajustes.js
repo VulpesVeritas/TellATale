@@ -1,11 +1,13 @@
 import React from 'react'
-import SimplePaper from '../components/CuadrosNotificaciones'
+import SimplePaper2 from '../components/cuadroAjustes'
 
 export default function Ajustes() {
     return (
-        <div>
-            <label>Ajustes</label>
-            <SimplePaper></SimplePaper>
+        <div className='contenedorPrinc'>
+            <div className='papel'>
+                <SimplePaper2>
+                </SimplePaper2>
+            </div>
             
         </div>
     )
