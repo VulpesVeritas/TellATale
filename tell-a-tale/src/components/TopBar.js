@@ -9,12 +9,14 @@ import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import '../css/TopBar.css'
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -98,8 +100,8 @@ export default function PrimarySearchAppBar(props) {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Notificaciones</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Mis historias</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Subir cómic</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Seguidos</MenuItem>
     </Menu>
   );
 
@@ -120,9 +122,9 @@ export default function PrimarySearchAppBar(props) {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
+      <MenuItem id="Top">
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
+          <Badge badgeContent={0} color="error">
             <MailIcon />
           </Badge>
         </IconButton>
@@ -134,7 +136,7 @@ export default function PrimarySearchAppBar(props) {
           aria-label="show 17 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={17} color="error">
+          <Badge badgeContent={0} color="error">
             <NotificationsIcon />
           </Badge>
         </IconButton>
@@ -166,7 +168,6 @@ export default function PrimarySearchAppBar(props) {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
@@ -174,7 +175,7 @@ export default function PrimarySearchAppBar(props) {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            Tell a tale
           </Typography>
           <Search>
             <SearchIconWrapper>
