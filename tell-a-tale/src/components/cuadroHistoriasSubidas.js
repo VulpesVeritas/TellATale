@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-
+import '../css/comicsSubidos.css'
 
 export default function SimplePaperSubidas() {
   return (
@@ -18,19 +18,20 @@ export default function SimplePaperSubidas() {
       }}
     >
       <Paper elevation={3}>
-          <div >
-            <img 
+          <div className='contenedorPrincipalTarjetas'>
+            <img className='imagenComic' 
                 src="https://pbs.twimg.com/media/E9vwPTbX0AE3r0I?format=jpg&name=large"
                 alt="Agony" 
-                height="175"
-                width="175"/>
+                height="200"
+                width="200"
+                />
             <div>
               <div>
-                <h1>Titulo</h1>
-                Descripcion
+                    <h1>Titulo</h1>
+                    <h3>Descripcion</h3>
               </div>
-              <div>
-                # capitulos
+              <div className='numCaps'>
+                    # capitulos
               </div>
             </div>
           </div>

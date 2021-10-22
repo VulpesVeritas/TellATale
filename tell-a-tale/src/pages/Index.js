@@ -1,6 +1,6 @@
 import React from 'react'
 import ActionAreaCard from '../components/Tarjetas'
-//import BasicRating from '../components/Calificacion'
+import BasicRating from '../components/Calificacion'
 import '../css/tarjetas.css'
 
 export default function Index() {
