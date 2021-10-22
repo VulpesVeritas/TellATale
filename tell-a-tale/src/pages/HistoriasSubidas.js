@@ -1,12 +1,13 @@
 import React from 'react'
-import SimplePaper from '../components/CuadrosNotificaciones'
+import SimplePaperSubidas from '../components/cuadroHistoriasSubidas'
+import '../css/comicsSubidos.css'
 
 export default function HistoriasSubidas() {
     return (
-        <div>
-            <SimplePaper></SimplePaper>
-            <SimplePaper></SimplePaper>
-            <SimplePaper></SimplePaper>
+        <div className='contPrinc'>
+            <SimplePaperSubidas></SimplePaperSubidas>
+            <SimplePaperSubidas></SimplePaperSubidas>
+            <SimplePaperSubidas></SimplePaperSubidas>
         </div>
     )
 }
