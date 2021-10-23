@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+.contenedorSubirComic{
+    width: 70vw;
+    margin: auto;
+    overflow-x:visible;
+    padding-top: 2vh;
+}
+.contenedorImagenesSubirComic{
+    margin-right: 1vw;
+    text-align: center;
+}
+.contenedorComboBoxSubirComic{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    width: max-content;
+}
+.contenedor01{
+    overflow-x:visible;
+}
+
+.texto-SubirComic{
+    display: block;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vh;
+}
+.Labels{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.MuiAutocomplete-root{
+    margin-top: 1vh;
+    width: max-content;
+}
+
+#Succ{
+margin-top: 1vh;
+}
