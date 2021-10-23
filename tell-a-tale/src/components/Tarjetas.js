@@ -7,11 +7,11 @@ import { CardActionArea } from '@mui/material';
 
 export default function ActionAreaCard() {
   return (
-    <Card sx={{ maxWidth: 300 }} >
+    <Card  class="card">
       <CardActionArea>
-        <CardMedia
+        <CardMedia class ="IMGCard"
           component="img"
-          height="175"
+  
           image="https://pbs.twimg.com/media/E9vwPTbX0AE3r0I?format=jpg&name=large"
           alt="Agony"
         />
