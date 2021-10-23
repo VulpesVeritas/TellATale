@@ -8,21 +8,31 @@ export default function Index() {
     return (
         <div className='contenedorPrinc'>
             <Slide></Slide>
-                <div className='historias' >
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                </div>
-                <div className='historias' >
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                </div>
-                <div className='historias' >
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                    <ActionAreaCard ></ActionAreaCard>
-                </div>
+            <p class="Titulos">Actualizados</p>
+            <div className='historias' >
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+            </div>
+            <p class="Titulos">Historias ocultas</p>
+            <div className='historias' >
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+            </div>
+            <p class="Titulos">Nuevas historias</p>
+            <div className='historias' >
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+            </div>
+            <p class="Titulos">Más leidos</p>
+            <div className='historias' >
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+                <ActionAreaCard ></ActionAreaCard>
+            </div>
+
         </div>
     )
 }
