@@ -1,3 +1,8 @@
-.MuiToolbar-root{
+.MuiToolbar-root {
     background-color: rgb(2, 6, 51);
+}
+
+.Logo {
+    height: 4vw;
+    margin-right: 1vw;
 }

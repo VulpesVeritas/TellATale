@@ -16,6 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import '../css/TopBar.css'
+import logo from '../imagenes/Recurso2.png'
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -161,14 +162,7 @@ export default function PrimarySearchAppBar(props) {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-          </IconButton>
+           <img class="Logo" src={logo} alt="Logo" />
           <Typography
             variant="h6"
             noWrap
