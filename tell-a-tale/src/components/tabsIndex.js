@@ -86,7 +86,6 @@ export default function BasicTabs() {
                             descripcion="No puedo vivir,
                         Las olas no me hablan de ti,
                         Sentado en la arena">
-
                         </ActionAreaCard>
                     </div>
                 </div>
