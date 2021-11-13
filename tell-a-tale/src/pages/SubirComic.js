@@ -2,7 +2,6 @@ import React from 'react'
 import ComboBox from '../components/ComboBox'
 import '../css/subircomic.css'
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 
 export default function SubirComic() {
     return (
