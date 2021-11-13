@@ -28,18 +28,6 @@
     width: 10vw;
     height: 10vw;
     border-radius: 6vw;
-    margin-right: 2vw;
-}
-.imgPortada {
-    width: 33.3vw;
-    height: 7.66vw;
-}
-.Perfil {
-    display: inline-block;
-}
-.Portada {
-    display: inline-block;
-    text-align: center;
 }
 .Datos {
     width: max-content;
