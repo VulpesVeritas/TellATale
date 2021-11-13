@@ -24,10 +24,11 @@ function App() {
             <Route exact path="/Favoritos" component={Favoritos} />
             <Route exact path="/CrearComic" component={SubirComic}/>
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
+            <Route exact path="/MisHistorias" component={HistoriasSubidas}/>
+
             <Route exact path="/Ajustes" component={Ajustes}/>
             <Route exact path="/Comic" component={ComicEsp}/>
             <Route exact path="/Editar" component={EditarHistoria}/>
-            <Route exact path="/MisHistorias" component={HistoriasSubidas}/>
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
           </Switch>

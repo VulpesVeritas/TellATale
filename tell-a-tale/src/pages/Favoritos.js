@@ -1,6 +1,5 @@
 import React from 'react'
 import ActionAreaCard from '../components/Tarjetas'
-import '../css/tarjetas.css'
 
 export default function Favoritos() {
     return (
