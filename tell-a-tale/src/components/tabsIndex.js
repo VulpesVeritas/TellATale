@@ -48,18 +48,19 @@ export default function BasicTabs() {
     };
 
     return (
-        <Box sx={{ maxWidth: '100vw', bgcolor: 'background.paper'}}>
+        <Box sx={{ maxWidth: '100vw', bgcolor: 'background.paper' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} variant="scrollable"
-        scrollButtons
-        allowScrollButtonsMobile
-        aria-label="basic tabs example">
+                    scrollButtons
+                    allowScrollButtonsMobile
+                    aria-label="basic tabs example">
                     <Tab label="Nuevas historias" {...a11yProps(0)} />
                     <Tab label="Más leídos" {...a11yProps(1)} />
                     <Tab label="Menos leídos" {...a11yProps(2)} />
                     <Tab label="Mejores valorados" {...a11yProps(3)} />
                     <Tab label="Menos valorados" {...a11yProps(4)} />
                     <Tab label="Actualizados" {...a11yProps(5)} />
+                    <Tab label="Generos" {...a11yProps(6)} />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
@@ -119,7 +120,7 @@ export default function BasicTabs() {
             </TabPanel>
             <TabPanel value={value} index={2}>
                 <div className='contenedorPrinc'>
-                <div className='historias' >
+                    <div className='historias' >
                         <ActionAreaCard
                             imagen="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium"
                             titulo="07"
@@ -142,12 +143,12 @@ export default function BasicTabs() {
                         Te sigo esperando otra vez">
                         </ActionAreaCard>
                     </div>
-                    
+
                 </div>
             </TabPanel>
             <TabPanel value={value} index={3}>
                 <div className='contenedorPrinc'>
-                <div className='historias' >
+                    <div className='historias' >
                         <ActionAreaCard
                             imagen="https://pbs.twimg.com/media/FD5HWVGVgAAArGR?format=jpg&name=small"
                             titulo="10"
@@ -173,7 +174,7 @@ export default function BasicTabs() {
                 </div>
             </TabPanel>
             <TabPanel value={value} index={4}>
-            <div className='contenedorPrinc'>
+                <div className='contenedorPrinc'>
                     <div className='historias' >
                         <ActionAreaCard
                             imagen="https://pbs.twimg.com/media/E9vwPTbX0AE3r0I?format=jpg&name=large"
@@ -201,7 +202,7 @@ export default function BasicTabs() {
                 </div>
             </TabPanel>
             <TabPanel value={value} index={5}>
-            <div className='contenedorPrinc'>
+                <div className='contenedorPrinc'>
                     <div className='historias' >
                         <ActionAreaCard
                             imagen="https://pbs.twimg.com/media/FD_DEkEaAAIOfLZ?format=jpg&name=4096x4096"
@@ -226,6 +227,13 @@ export default function BasicTabs() {
                         </ActionAreaCard>
                     </div>
                 </div>
+            </TabPanel>
+            <TabPanel value={value} index={6}>
+                Aquí aparece la lista de generos que hay, seleccionas uno y te envía a una pagina donde aparecen todos los cómics por ese genero.
+                Página aún pendiente.
+                La programadora está hecho con internet explorer, aún no procesa lo que falta.
+                Si lees esto, por favor recuerdamelo.
+                PD: Coloco salto de linea pero no se pone aiuda
             </TabPanel>
         </Box>
     );
