@@ -1,19 +1,19 @@
 import React from 'react'
-import ActionAreaCard from '../components/Tarjetas'
+
+import Tabs from '../components/tabsIndex'
 //import BasicRating from '../components/Calificacion'
-import '../css/tarjetas.css'
+import Slide from '../components/Slide'
+import '../css/index.css'
+
+import { Fragment } from 'react';
+
 
 export default function Index() {
     return (
-        <div className='contenedorPrinc'>
-                <div className='carrusel'>
-                
-                </div>
-                <div className='historias' >
-                    <ActionAreaCard></ActionAreaCard>
-                    <ActionAreaCard></ActionAreaCard>
-                    <ActionAreaCard></ActionAreaCard>
-                </div>
-        </div>
+        <Fragment>
+            <Slide></Slide>
+            <Tabs></Tabs>
+
+        </Fragment>
     )
 }

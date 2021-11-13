@@ -1,15 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+/*Tarjetas
+
+.card{
+    width: 600px;
+    margin:1vw
+}
+
+.IMGCard{
+    width: 30%;
+    height: 138px;
+    float: left;
+    margin: 0px;
+}
+
 .MuiCardContent-root{
-
-    background-color: rgb(55, 107, 104);
+    width: 50%;
+    height: 106px;
+    background-color:#F2B705;
+    float: right;
+    margin: 0px;
 }
 
-.historias{
-    margin-top: 3%;
-    display: flex;
+
+
+
+*/
+
+
+@media only screen and (max-width: 991px) {
+    .cardMod{
+        width: 500px;
+        background-color: #160526;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0px 0px 4px 0px;
+    }
+    
+    .IMGCard{
+        width: 140px;
+        height: 140px;
+        float: left;
+        margin: 0px;
+    }
+    .ContentCard{
+        width: 350px;        
+        padding-left: 10px;
+        height: 140px;
+        background-color:#240940;
+        float: right;
+    }
+    .Title{
+        font-weight: bold;
+        font-size: 22px;
+        color:rgb(233, 233, 233);
+    }
+    .Desc{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        margin: 0%;
+        color:rgb(233, 233, 233);
+    }
 }
 
-.contenedorPrinc{
-    margin: auto;
-    width: max-content;
+@media only screen and (min-width: 992px) {
+    .cardMod{
+        width: 30vw;
+        background-color: #160526;
+        padding: 0.5vw;
+        border-radius: 10px;
+        margin: 0px 5px 0px 0px;
+    }
+    
+    .IMGCard{
+        width: 7vw;
+        height: 7vw;
+        float: left;
+        margin: 0px;
+    }
+    .ContentCard{
+        width: 22vw;
+        padding-left: 0.5vw;
+        height: 7vw;
+        background-color:#240940;
+        float: right;
+    }
+    .Title{
+        font-weight: bold;
+        font-size: 1.25vw;
+        color:rgb(233, 233, 233);
+    }
+    .Desc{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8vw;
+        margin: 0%;
+        color: rgb(233, 233, 233);
+
+    }
 }
 

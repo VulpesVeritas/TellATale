@@ -1,32 +1,30 @@
 import React from 'react'
 import ComboBox from '../components/ComboBox'
+import '../css/subircomic.css'
+import Button from '@mui/material/Button';
 
 export default function SubirComic() {
     return (
-        <div>
-            <div>
-                <image src='./imagenes/goreAgony2'>
+        <div class="contenedorSubirComic">
+            <div class="contenedorImagenesSubirComic">
+                <Button variant="contained" href="#contained-buttons">
+                    Seleccionar imagen de portada
+                </Button> <Button variant="contained" href="#contained-buttons">
+                    Seleccionar imagen para banner
+                </Button>
+            </div>
+            <div class="contenedorComboBoxSubirComic">
+                <ComboBox></ComboBox>
+                <ComboBox></ComboBox>
+            </div>
+            <div class="contenedor01">
+                <label class="Labels">Titulo</label>
+                <input class="texto-SubirComic" type='text'></input>
+                <label class="Labels">Descripcion</label>
+                <textarea class="texto-SubirComic"></textarea>
+                <Button id="Succ" variant="contained" color="success">Success</Button>
+            </div>
 
-                </image>
-                <image src='./imagenes/goreAgony2'>
-
-                </image>
-            </div>
-            <div>
-            <ComboBox>Genero 1</ComboBox>
-            <ComboBox>Genero 1</ComboBox>
-            </div>
-            <div>
-                <label>
-                    Titulo
-                </label>
-                <input type='text'></input>
-                <label>
-                    Descripcion
-                </label>
-                <textarea></textarea>
-            </div>
-            
         </div>
     )
 }
