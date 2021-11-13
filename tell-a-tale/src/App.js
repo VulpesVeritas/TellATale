@@ -7,8 +7,8 @@ import ComicEsp from './pages/ComicEsp'
 import EditarHistoria from './pages/EditarHistoria'
 import HistoriasSubidas from './pages/HistoriasSubidas'
 import Notificaciones from './pages/Notificaciones'
-import SubirComic from './pages/SubirComic'
-import SubirCapComic from './pages/SubirCapComic'
+import CrearComic from './pages/CrearComic'
+import SubirCapComic from './pages/CrearCapComic'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -22,9 +22,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route exact path="/Favoritos" component={Favoritos} />
-            <Route exact path="/CrearComic" component={SubirComic}/>
+            <Route exact path="/CrearComic" component={CrearComic}/>
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
-            <Route exact path="/MisHistorias" component={HistoriasSubidas}/>
+            <Route exact path="/Perfil" component={HistoriasSubidas}/>
 
             <Route exact path="/Ajustes" component={Ajustes}/>
             <Route exact path="/Comic" component={ComicEsp}/>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/subircomic.css'
+import '../css/CrearComic.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';

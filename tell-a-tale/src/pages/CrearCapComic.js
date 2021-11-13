@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/subircomic.css'
+import '../css/CrearCapComic.css'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -10,10 +10,6 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
-import PropTypes from 'prop-types';
-import { useAutocomplete } from '@mui/core/AutocompleteUnstyled';
-import CheckIcon from '@mui/icons-material/Check';
-import CloseIcon from '@mui/icons-material/Close';
 
 /* Galeria */
 const itemData = [
