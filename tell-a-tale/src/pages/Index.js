@@ -2,12 +2,16 @@ import React from 'react'
 import ActionAreaCard from '../components/Tarjetas'
 //import BasicRating from '../components/Calificacion'
 import Slide from '../components/Slide'
-import '../css/tarjetas.css'
+import '../css/index.css'
+
+import { Fragment } from 'react';
+
 
 export default function Index() {
     return (
-        <div className='contenedorPrinc'>
-            <Slide></Slide>
+        <Fragment>
+        <Slide></Slide>            
+        <div className='contenedorPrinc'>            
             <p class="Titulos">Actualizados</p>
             <div className='historias' >
                 <ActionAreaCard ></ActionAreaCard>
@@ -32,7 +36,7 @@ export default function Index() {
                 <ActionAreaCard ></ActionAreaCard>
                 <ActionAreaCard ></ActionAreaCard>
             </div>
-
         </div>
+        </Fragment>
     )
 }
