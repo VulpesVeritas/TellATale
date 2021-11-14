@@ -3,7 +3,7 @@ import PrimarySearchAppBar from './components/TopBar';
 import Index from './pages/Index';
 import Favoritos from './pages/Favoritos';
 import Ajustes from './pages/Ajustes';
-import ComicEsp from './pages/ComicEsp'
+import Comic from './pages/Comic'
 import EditarHistoria from './pages/EditarHistoria'
 import HistoriasSubidas from './pages/Perfil'
 import Notificaciones from './pages/Notificaciones'
@@ -25,9 +25,10 @@ function App() {
             <Route exact path="/CrearComic" component={CrearComic}/>
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
             <Route exact path="/Perfil" component={HistoriasSubidas}/>
+            <Route exact path="/Comic" component={Comic}/>
 
             <Route exact path="/Ajustes" component={Ajustes}/>
-            <Route exact path="/Comic" component={ComicEsp}/>
+            
             <Route exact path="/Editar" component={EditarHistoria}/>
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
