@@ -26,10 +26,9 @@ function App() {
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
             <Route exact path="/Perfil" component={HistoriasSubidas}/>
             <Route exact path="/Comic" component={Comic}/>
-
-            <Route exact path="/Ajustes" component={Ajustes}/>
-            
             <Route exact path="/Editar" component={EditarHistoria}/>
+
+            <Route exact path="/Ajustes" component={Ajustes}/>            
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
           </Switch>
