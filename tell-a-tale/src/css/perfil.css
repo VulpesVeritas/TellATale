@@ -43,6 +43,9 @@
     .MisHistorias{
         margin-bottom: 2vw;
     }
+    .DatosPerfil{
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 992px) {

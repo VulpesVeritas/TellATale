@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/Comic.css'
+import ActionAreaCard from '../components/TarjetasCapcomic'
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -74,8 +75,18 @@ export default function ComicEsp() {
                         </Button>
                     </Stack>
                 </div>
-                <div class="Division"></div>
             </div>
+            <div class="Division"></div>
+            <div class="Capitulos">
+            <ActionAreaCard
+                    imagen="https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"
+                    titulo="El regreso del sanwich maldito parte 1"
+                    descripcion="Callado en la playa,
+                        Te lloro en silencio otra vez,
+                        Me ahoga esta pena">
+                </ActionAreaCard>
+            </div>
+
         </div>
     )
 }

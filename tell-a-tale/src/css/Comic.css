@@ -9,11 +9,12 @@
 .imgPortadaComic {
     width: 100vw;
     height: 23vw;
+    z-index: 1;
 }
 
 .ContenedorInformacionComic {
     background-color: rgb(41, 40, 41);
-    width: 100vw;
+    margin: 0 auto;
 }
 
 .IzquierdoComic {
@@ -48,24 +49,45 @@
     width: max-content;
     margin: auto;
 }
-.Generos{
+
+.Generos {
     width: 70vw;
 }
-.Genero{
+
+.Genero {
     display: inline-block;
     background-color: #420F73;
     padding: 10px;
     border-radius: 5px;
     margin-left: 5px;
 }
-.Division{
+
+.Division {
     width: 100vw;
     height: 2vw;
     background-color: black;
 }
+
+.Capitulos {
+    margin: auto;
+    box-shadow: -2px 15px 34px 3px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -2px 15px 34px 3px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -2px 15px 34px 3px rgba(0, 0, 0, 0.6);
+}
+
 @media only screen and (max-width: 991px) {
     .text-ag {
         text-align: center;
+        margin: 5px;
+    }
+    .ContenedorInformacionComic {
+        width: 70vw;
+        margin: 0 auto;
+        z-index: 15;
+        transform: translate(0, -13vw);
+    }
+    .Division {
+        transform: translate(0, -13vw);
     }
     .IzquierdoComic {
         margin: 0;
@@ -73,7 +95,7 @@
         margin: 0 auto;
     }
     .DerechoComic {
-        width: 70vw;
+        width: 60vw;
         margin: 0 auto;
     }
     .imgPerfilComic {
@@ -86,27 +108,49 @@
         margin: auto;
         transform: translate(10vw, 3.5vw);
     }
+    .Capitulos {
+        padding: 2vw;
+        width: 66vw;
+        transform: translate(0, -13vw);
+        -webkit-transform: translate(0, -13vw);
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .text-ag {
+        margin: 5px;
+    }
+    .ContenedorInformacionComic {
+        width: 75vw;
+        z-index: 15;
+        transform: translate(0, -12vw);
+    }
+    .Division {
+        transform: translate(0, -12vw);
+    }
+    .Capitulos {
+        transform: translate(0, -12vw);
+        padding: 2vw;
+        width: 71vw;
+    }
     .IzquierdoComic {
         margin: 0;
-        width: 26vw;
+        width: 20vw;
         float: left;
     }
     .DerechoComic {
         padding: 2vw;
-        width: 70vw;
+        width: 50vw;
         float: right;
     }
     .imgPerfilComic {
-        width: 20vw;
-        height: 20vw;
+        width: 15vw;
+        height: 15vw;
     }
     .MostrarCalif {
         width: max-content;
         padding: 0.5vw;
         margin: auto;
-        transform: translate(8vw, 2.8vw);
+        transform: translate(5vw, 2.8vw);
     }
 }
