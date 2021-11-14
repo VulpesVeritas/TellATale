@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/subircomic.css'
+import '../css/CrearComic.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -193,7 +193,7 @@ export default function SubirComic() {
         <div class="Contenedor">
             <div class="imagenes">
                 <div class="Perfil">
-                    <img class="imgPerfil" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium"></img>
+                    <img class="imgPerfil" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de perfil"></img>
                     <Stack direction="row" alignItems="center" spacing={2}>
                         <label htmlFor="contained-button-file">
                             <Input accept="image/*" id="contained-button-file" multiple type="file" />
@@ -205,7 +205,7 @@ export default function SubirComic() {
                 </div>
 
                 <div class="Portada">
-                    <img class="imgPortada" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium"></img>
+                    <img class="imgPortada" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de portada"></img>
                     <Stack direction="row" alignItems="center" spacing={2}>
                         <label class="JalaPoFavo" htmlFor="contained-button-file">
                             <Input accept="image/*" id="contained-button-file" multiple type="file" />

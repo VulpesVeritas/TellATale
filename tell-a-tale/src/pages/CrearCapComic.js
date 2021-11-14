@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/subircomic.css'
+import '../css/CrearCapComic.css'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -10,10 +10,6 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
-import PropTypes from 'prop-types';
-import { useAutocomplete } from '@mui/core/AutocompleteUnstyled';
-import CheckIcon from '@mui/icons-material/Check';
-import CloseIcon from '@mui/icons-material/Close';
 
 /* Galeria */
 const itemData = [
@@ -101,7 +97,7 @@ export default function SubirCapComic() {
         <div class="Contenedor">
             <div class="imagenes">
                 <div class="Perfil">
-                    <img class="imgPerfil" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium"></img>
+                    <img class="imgPerfil" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de perfil"></img>
                     <Stack direction="row" alignItems="center" spacing={2}>
                         <label class="JalaPoFavo " htmlFor="contained-button-file">
                             <Input accept="image/*" id="contained-button-file" multiple type="file" />
