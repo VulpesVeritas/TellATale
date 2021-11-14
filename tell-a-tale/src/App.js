@@ -5,7 +5,7 @@ import Favoritos from './pages/Favoritos';
 import Ajustes from './pages/Ajustes';
 import ComicEsp from './pages/ComicEsp'
 import EditarHistoria from './pages/EditarHistoria'
-import HistoriasSubidas from './pages/HistoriasSubidas'
+import HistoriasSubidas from './pages/Perfil'
 import Notificaciones from './pages/Notificaciones'
 import CrearComic from './pages/CrearComic'
 import SubirCapComic from './pages/CrearCapComic'
