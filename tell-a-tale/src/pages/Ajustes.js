@@ -41,16 +41,15 @@ export default function Ajustes() {
                     >
                         <div>
                             <TextField
-                                required
-                                id="standard-required"
-                                label="Nombre"
+                                id="standard-basic"
+                                label="Usuario"
                                 defaultValue=" "
                                 variant="standard"
                             />
                             <div>
                                 <TextField
                                     id="standard-multiline-static"
-                                    label="Descripción"
+                                    label="Sobre mi"
                                     multiline
                                     rows={4}
                                     defaultValue=" "
