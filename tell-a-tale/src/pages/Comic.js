@@ -50,6 +50,7 @@ export default function ComicEsp() {
                 </div>
                 <div class="DerechoComic">
                     <h1 class="text-ag">Acnologia</h1>
+                    <h2 class="text-ag">Autor</h2>
                     <p class="desc text-ag"> Acnologia es un dragón enorme,
                         más grande que el maestro Makarov en su forma de Titan.
                         En toda su parte superior del cuerpo, está cubierto de escamas negras y redondas,
