@@ -4,7 +4,7 @@ import Index from './pages/Index';
 import Favoritos from './pages/Favoritos';
 import Ajustes from './pages/Ajustes';
 import Comic from './pages/Comic'
-import EditarHistoria from './pages/EditarHistoria'
+import EditarComic from './pages/EditarComic'
 import HistoriasSubidas from './pages/Perfil'
 import Notificaciones from './pages/Notificaciones'
 import CrearComic from './pages/CrearComic'
@@ -26,7 +26,7 @@ function App() {
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
             <Route exact path="/Perfil" component={HistoriasSubidas}/>
             <Route exact path="/Comic" component={Comic}/>
-            <Route exact path="/Editar" component={EditarHistoria}/>
+            <Route exact path="/EditarComic" component={EditarComic}/>
 
             <Route exact path="/Ajustes" component={Ajustes}/>            
             <Route exact path="/Notificaciones" component={Notificaciones}/>
