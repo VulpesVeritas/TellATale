@@ -27,8 +27,8 @@ function App() {
             <Route exact path="/Perfil" component={HistoriasSubidas}/>
             <Route exact path="/Comic" component={Comic}/>
             <Route exact path="/EditarComic" component={EditarComic}/>
-
             <Route exact path="/Ajustes" component={Ajustes}/>            
+
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
           </Switch>
