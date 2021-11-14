@@ -9,16 +9,16 @@ import '../css/tarjetasCapcomic.css'
 export default function TarjetasCapcomic(props) {
     return (
         <div>
-            <Card class="cardMod" sx={{ maxWidth: 500 }}>
+            <Card class="cardModComic" sx={{ maxWidth: 500 }}>
                 <CardActionArea>
                     <CardMedia
-                        class="IMGCard"
+                        class="IMGCardComic"
                         component="img"
                         image={props.imagen}
                         alt="green iguana"
                     />
                     <CardContent
-                        class="ContentCard"
+                        class="ContentCardComic"
                     >
                         <Typography class="TituloCap" gutterBottom variant="h5" component="div">
                             {props.titulo}
