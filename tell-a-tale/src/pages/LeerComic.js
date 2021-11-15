@@ -58,9 +58,15 @@ export default function LeerComic() {
                 <div class="Comentario">
                     <h3 class="NombrePersonaComentarios">Nombre de la persona aquí</h3>
                     <p class="TextoPersonaComentario">Mensaje de la persona aquí</p>
+                    <Button variant="outlined" color="error" id="ReportarCom">
+                        Reportar
+                    </Button>
                 </div> <div class="Comentario">
                     <h3 class="NombrePersonaComentarios">Aiuda</h3>
                     <p class="TextoPersonaComentario">Trato de salvar el semeste</p>
+                    <Button variant="outlined" color="error" id="ReportarCom">
+                        Reportar
+                    </Button>
                 </div>
             </div>
         </div>
