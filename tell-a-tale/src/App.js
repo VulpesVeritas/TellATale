@@ -6,6 +6,7 @@ import Registrarse from './pages/Registrarse';
 import Favoritos from './pages/Favoritos';
 import Ajustes from './pages/Ajustes';
 import Comic from './pages/Comic'
+import LeerComic from './pages/LeerComic'
 import EditarComic from './pages/EditarComic'
 import HistoriasSubidas from './pages/Perfil'
 import Notificaciones from './pages/Notificaciones'
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/Favoritos" component={Favoritos} />
 
             <Route exact path="/Comic" component={Comic}/>
+            <Route exact path="/LeerComic" component={LeerComic}/>
 
             <Route exact path="/Ajustes" component={Ajustes}/>            
 

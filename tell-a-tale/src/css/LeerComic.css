@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+.ContenedorLeerComic {
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.ImagenesPagComic {
+    width: max-content;
+    margin: auto;
+}
+
+.imComic {
+    width: 40vw;
+    height: 48vw;
+    margin: auto;
+    display: block;
+}
+
+.Comentarios {
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
+
+.EscribirComentario {
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+}
+
+.Comentario{
+    width: 40vw;
+    margin: auto;
+    padding: 5px;
+    border-top: 2px solid black;
+}
+
+.NombrePersonaComentarios{
+    font-family: 'Poppins', sans-serif;
+
+}
+.TextoPersonaComentario{
+   font-family: 'Open Sans', sans-serif;
+}
