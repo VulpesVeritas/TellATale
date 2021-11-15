@@ -1,4 +1,4 @@
-.ContenedorRegistrarse {
+.ContenedorIniciarSesion {
     width: 100vw;
     height: 89.6vh;
     background-color: #4158D0;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.SegundoContenedorRegistrarse {
+.SegundoContenedorIS {
     width: 60vw;
     background-color: #ffffffa2;
     border-radius: 20px;
@@ -20,6 +20,6 @@
     margin: auto;
 }
 
-.registrarse {
+.iniciarSesionBtn {
     margin-top: 2vw !important;
 }

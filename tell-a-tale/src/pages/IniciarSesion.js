@@ -5,12 +5,13 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 
-import '../css/registrarse.css'
 
-export default function Registrarse() {
+import '../css/iniciarSesion.css'
+
+export default function IniciarSesion() {
     return (
-        <div class="ContenedorRegistrarse">
-             <div class="SegundoContenedorRegistrarse">
+        <div class="ContenedorIniciarSesion">
+             <div class="SegundoContenedorIS">
                 <Box id="CajaDeDatos"
                     component="form"
                     sx={{
@@ -20,20 +21,6 @@ export default function Registrarse() {
                     autoComplete="off"
                 >
                     <div>
-                        <TextField
-                            required
-                            id="standard-required"
-                            label="Nombre de Usuario"
-                            defaultValue="Hello World"
-                            variant="standard"
-                        />
-                        <TextField
-                            required
-                            id="standard-required"
-                            label="Apodo"
-                            defaultValue="Hello World"
-                            variant="standard"
-                        />
                         <TextField
                             required
                             id="standard-required"
@@ -51,9 +38,9 @@ export default function Registrarse() {
                     </div>
                 </Box>
                 <Stack direction="row">
-                        <div class="JalaPoFavo registrarse">
+                        <div class="JalaPoFavo iniciarSesionBtn">
                             <Button variant="contained" color="success">
-                                Registrarse
+                                Iniciar Sesion
                             </Button>
                         </div>
                     </Stack>
