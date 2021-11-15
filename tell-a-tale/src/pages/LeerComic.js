@@ -4,6 +4,8 @@ import '../css/LeerComic.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
+import SendIcon from '@mui/icons-material/Send';
+import Button from '@mui/material/Button';
 
 export default function LeerComic() {
     const [value, setValue] = React.useState('Controlled');
@@ -18,6 +20,12 @@ export default function LeerComic() {
                 <img class="imComic" src="http://pm1.narvii.com/6206/1bd213a3214c1d52b9eb657d6f09ed823bc84984_00.jpg" alt="Cargando..."></img>
                 <img class="imComic" src="http://pm1.narvii.com/6206/1bd213a3214c1d52b9eb657d6f09ed823bc84984_00.jpg" alt="Cargando..."></img>
                 <img class="imComic" src="http://pm1.narvii.com/6206/1bd213a3214c1d52b9eb657d6f09ed823bc84984_00.jpg" alt="Cargando..."></img>
+            </div>
+            <div class="Separacion">
+                <p class="Aviso"> ¿Algo está mal? Reportalo y nosotros lo revisamos</p>
+                <Button variant="outlined" color="error" id="ReportarCap">
+                    Reportar
+                </Button>
             </div>
             <div class="Comentarios">
                 <div class="EscribirComentario">
@@ -40,6 +48,12 @@ export default function LeerComic() {
                             />
                         </div>
                     </Box>
+                    <div class="BtnEnviarComentario">
+                        <Button variant="contained" endIcon={<SendIcon />}>
+                            Send
+                        </Button>
+                    </div>
+
                 </div>
                 <div class="Comentario">
                     <h3 class="NombrePersonaComentarios">Nombre de la persona aquí</h3>
