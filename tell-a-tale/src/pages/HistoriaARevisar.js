@@ -1,52 +1,22 @@
 import React from 'react'
 import '../css/Comic.css'
 import '../css/LeerComic.css'
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 
-const StyledRating = styled(Rating)({
-    '& .MuiRating-iconFilled': {
-        color: '#ff6d75',
-    },
-    '& .MuiRating-iconHover': {
-        color: '#ff3d47',
-    },
-});
 
 export default function HistoriaARevisar() {
     return (
         <div>
             <img class="imgPortadaComic" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de portada"></img>
             <div class="ContenedorInformacionComic">
-                <div class="IzquierdoComic">
-                    <div class="MostrarCalif">
-                        <FavoriteBorderIcon color="secondary" id="corazon" />
-                        <p class="Calificacion">10</p>
-                    </div>
+                <div class="IzquierdoComicRevisiones">
                     <div class="ImagenComic">
                         <img class="imgPerfilComic" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de perfil"></img>
                     </div>
-                    <Box class="Rating"
-                        sx={{
-                            '& > legend': { mt: 2 },
-                        }}
-                    >
-                        <StyledRating
-                            name="customized-color"
-                            defaultValue={5}
-                            getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
-                            precision={0.5}
-                            icon={<FavoriteIcon fontSize="inherit" />}
-                            emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-                        />
-                    </Box>
                 </div>
                 <div class="DerechoComic">
                     <h1 class="text-ag">Acnologia</h1>
