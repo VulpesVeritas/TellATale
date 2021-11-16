@@ -14,6 +14,7 @@ import CrearComic from './pages/CrearComic'
 import SubirCapComic from './pages/CrearCapComic'
 import EditarCapitulo from './pages/editarCapComic'
 import Genero from './pages/Genero'
+import AgregarModerador from './pages/AgregarModerador'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -41,7 +42,9 @@ function App() {
             <Route exact path="/Comic" component={Comic}/>
             <Route exact path="/LeerComic" component={LeerComic}/>
 
-            <Route exact path="/Ajustes" component={Ajustes}/>            
+            <Route exact path="/Ajustes" component={Ajustes}/>
+
+            <Route exact path="/AgregarModerador" component={AgregarModerador}/>            
 
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
