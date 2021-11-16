@@ -13,6 +13,7 @@ import Notificaciones from './pages/Notificaciones'
 import CrearComic from './pages/CrearComic'
 import SubirCapComic from './pages/CrearCapComic'
 import EditarCapitulo from './pages/editarCapComic'
+import Genero from './pages/Genero'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -27,6 +28,7 @@ function App() {
             <Route exact path="/" component={Index} />
             <Route exact path="/IniciarSesion" component={IniciarSesion} />
             <Route exact path="/Registrarse" component={Registrarse} />
+            <Route exact path="/Genero" component={Genero} />
 
             <Route exact path="/CrearComic" component={CrearComic}/>
             <Route exact path="/EditarComic" component={EditarComic}/>

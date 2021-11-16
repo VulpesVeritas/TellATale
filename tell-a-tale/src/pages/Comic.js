@@ -11,6 +11,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
+import {Link} from "react-router-dom"
 
 const StyledRating = styled(Rating)({
     '& .MuiRating-iconFilled': {
@@ -73,7 +74,17 @@ export default function ComicEsp() {
                         <Button variant="outlined" color="error">
                             Reportar
                         </Button>
+                        
                     </Stack>
+                    <Stack id="botonesCreador" direction="row" spacing={1} >
+                        <Button id="btnEditar" variant="contained" component={Link} to="/Perfil">
+                            Editar
+                        </Button>
+                        <Button id="btnCrearCap" variant="contained" component={Link} to="/CrearCapComic">
+                            Crear capitulo
+                        </Button>
+                    </Stack>
+                    
                 </div>
             </div>
             <div class="Division"></div>
