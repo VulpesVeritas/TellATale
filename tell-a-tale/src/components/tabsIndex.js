@@ -228,9 +228,9 @@ export default function BasicTabs() {
                 </div>
             </TabPanel>
             <TabPanel value={value} index={6}>
-                <a class="GenerosTab" href="www.google.com">Accion</a>
-                <a class="GenerosTab" href="www.google.com">Aventura</a>
-                <a class="GenerosTab" href="www.google.com">Romance</a>
+                <a class="GenerosTab" href="/Genero">Accion</a>
+                <a class="GenerosTab" href="/Genero">Aventura</a>
+                <a class="GenerosTab" href="/Genero">Romance</a>
             </TabPanel>
         </Box>
     );
