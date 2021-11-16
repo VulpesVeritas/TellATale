@@ -19,6 +19,7 @@ import HistoriasPendientesDeAprobar from './pages/HistoriasPendientesDeAprobar'
 import HistoriaARevisar from './pages/HistoriaARevisar'
 import ComicsConReporte from './pages/ComicsConReporte'
 import ComicReportado from './pages/ComicReportado'
+import ComentariosReportados from './pages/ComentariosReportados'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -53,6 +54,7 @@ function App() {
             <Route exact path="/HistoriaARevisar" component={HistoriaARevisar}/>            
             <Route exact path="/ComicsConReporte" component={ComicsConReporte}/>            
             <Route exact path="/ComicReportado" component={ComicReportado}/>            
+            <Route exact path="/ComentariosReportados" component={ComentariosReportados}/>            
 
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
