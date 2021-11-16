@@ -1,5 +1,7 @@
 import React from 'react'
 import '../css/CrearComic.css'
+import ActionAreaCard from '../components/TarjetasCapcomic'
+
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -268,16 +270,27 @@ export default function EditarComic() {
                     </div>
                 </Box>
             </div>
+            <div class="CapitulosEdit">
+                <h3>Capitulos del comic:</h3>
+                <ActionAreaCard
+                    imagen="https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"
+                    titulo="El regreso del sanwich maldito parte 1"
+                    descripcion="Callado en la playa,
+                        Te lloro en silencio otra vez,
+                        Me ahoga esta pena">
+                </ActionAreaCard>
+            </div>
             <Stack direction="row">
                 <div class="JalaPoFavo">
                     <Button variant="contained" color="success">
                         Guardar nuevos datos
                     </Button>
                     <Button variant="outlined" color="error" id="Eliminarcomic">
-                            Eliminar comic
-                        </Button>
+                        Eliminar comic
+                    </Button>
                 </div>
             </Stack>
+
         </div>
     )
 }
