@@ -51,7 +51,7 @@ export default function AgregarModerador() {
                 <Stack direction="row">
                         <div class="JalaPoFavo registrarse">
                             <Button variant="contained" color="success">
-                                Registrarse
+                                Crear nuevo moderador
                             </Button>
                         </div>
                     </Stack>
