@@ -43,16 +43,6 @@
     float: left;
 }
 
-#btnEditar, #btnCrearCap{
-    color:azure;
-    background-color:  #3b0a58;
-}
-
-#botonesCreador{
-    text-align: right;
-    margin-left: 62%;
-}
-
 .Calificacion {
     float: right;
     margin: 0%;
@@ -193,3 +183,4 @@
         margin: auto;
         transform: translate(0, -12vw);
     }
+}

@@ -5,13 +5,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import '../css/tarjetasCapcomic.css'
-import {Link} from "react-router-dom";
 
 export default function TarjetasCapcomic(props) {
     return (
         <div>
             <Card class="cardModComic" sx={{ maxWidth: 500 }}>
-                <CardActionArea component={Link} to="/LeerComic">
+                <CardActionArea>
                     <CardMedia
                         class="IMGCardComic"
                         component="img"

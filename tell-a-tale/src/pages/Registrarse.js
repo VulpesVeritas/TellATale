@@ -7,23 +7,7 @@ import TextField from '@mui/material/TextField';
 
 import '../css/registrarse.css'
 
-import { CreateUsuario } from '../api/UsuariosAPI';
-
 export default function Registrarse() {
-    console.log("aaaaaiiuuda");
-    const [usuario, setUsuario] = useState({
-        nombre:"",
-        correo:"",
-        contrasena:"",
-        tipoUsuario: false,
-        listaSeguidos: []
-    });
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log("Submit, es decir, envio, usuario");
-        await CreateUsuario(usuario);
-    }
     return (
         <div class="ContenedorRegistrarse">
              <div class="SegundoContenedorRegistrarse">

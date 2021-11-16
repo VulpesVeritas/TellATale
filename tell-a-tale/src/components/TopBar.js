@@ -15,10 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import '../css/TopBar.css';
-import logo from '../imagenes/Recurso2.png';
-import {Link} from "react-router-dom";
-
+import '../css/TopBar.css'
+import logo from '../imagenes/Recurso2.png'
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -102,10 +100,9 @@ export default function PrimarySearchAppBar(props) {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem component={Link} to="/Perfil" onClick={handleMenuClose}>Perfil</MenuItem>
-      <MenuItem component={Link} to="/CrearComic" onClick={handleMenuClose}>Subir cómic</MenuItem>
-      <MenuItem component={Link} to="/Favoritos" onClick={handleMenuClose}>Seguidos</MenuItem>
-      <MenuItem component={Link} to="/Ajustes" onClick={handleMenuClose}>Ajustes</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Perfil</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Subir cómic</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Seguidos</MenuItem>
     </Menu>
   );
 
@@ -153,7 +150,6 @@ export default function PrimarySearchAppBar(props) {
           aria-controls="primary-search-account-menu"
           aria-haspopup="true"
           color="inherit"
-           
         >
           <AccountCircle />
         </IconButton>
@@ -165,17 +161,13 @@ export default function PrimarySearchAppBar(props) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar >
-          <a href="/">
-          <img class="Logo" src={logo} alt="Logo"/>
-          </a>
-           
+        <Toolbar>
+           <img class="Logo" src={logo} alt="Logo" />
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
-            
           >
             Tell a tale
           </Typography>
@@ -199,14 +191,11 @@ export default function PrimarySearchAppBar(props) {
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"
-              component={Link} to="/Notificaciones"
             >
               <Badge badgeContent={0} color="error">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <Link to="/IniciarSesion"><button class="btnBarra"  >Inicia sesion</button></Link>
-            <Link to="/Registrarse"><button class="btnBarra"  >Registrate</button></Link>
             <IconButton
               size="large"
               edge="end"
