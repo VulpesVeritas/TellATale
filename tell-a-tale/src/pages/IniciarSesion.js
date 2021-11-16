@@ -25,7 +25,7 @@ export default function IniciarSesion() {
                             required
                             id="standard-required"
                             label="Correo"
-                            defaultValue="Hello World"
+                            defaultValue=" "
                             variant="standard"
                         />
                         <TextField
