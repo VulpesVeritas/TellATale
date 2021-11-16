@@ -7,8 +7,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 
-
-export default function HistoriaARevisar() {
+export default function ComicEscondido() {
     return (
         <div>
             <img class="imgPortadaComic" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de portada"></img>
@@ -41,13 +40,21 @@ export default function HistoriaARevisar() {
                     <Stack direction="row">
                         <div class="JalaPoFavo">
                             <Button variant="contained" color="success">
-                                Aprobar comic
+                                Ir al comic
+                            </Button>
+                        </div><div class="JalaPoFavo">
+                            <Button variant="contained" color="success">
+                                Mostrar comic
                             </Button>
                         </div>
                     </Stack>
                 </div>
             </div>
             <div class="Division"></div>
+            <div class="NotaReporteComic">
+                <h3>Reporte escrito:</h3>
+                <p class="ReporteComic"> Aqui va escrito lo que haya escrito el usuario sobre por qué reportó el comic</p>
+            </div>
             <div class="ComentariosModerador">
                 <div class="EscribirComentario">
                     <Box
@@ -61,7 +68,7 @@ export default function HistoriaARevisar() {
                         <div>
                             <TextField
                                 id="filled-multiline-static"
-                                label="Envia mensaje al creador para poder aceptar la historia"
+                                label="Si es necesario modificaciones, envia mensaje al creador"
                                 multiline
                                 rows={3}
                                 defaultValue=" "
