@@ -18,7 +18,7 @@ import AgregarModerador from './pages/AgregarModerador'
 import HistoriasPendientesDeAprobar from './pages/HistoriasPendientesDeAprobar'
 import HistoriaARevisar from './pages/HistoriaARevisar'
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Fragment } from 'react';
 
 
@@ -27,10 +27,10 @@ function App() {
     <Fragment>
       <Router>
         <PrimarySearchAppBar>
-          <Switch>
+          <Routes>
             <Route exact path="/" component={Index} />
             <Route exact path="/IniciarSesion" component={IniciarSesion} />
-            <Route exact path="/Registrarse" component={Registrarse} />
+            <Route exact path="/Registrarse" element={<Registrarse/>} />
             <Route exact path="/Genero" component={Genero} />
 
             <Route exact path="/CrearComic" component={CrearComic}/>
@@ -52,7 +52,7 @@ function App() {
 
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
-          </Switch>
+          </Routes>
         </PrimarySearchAppBar>
       </Router>
     </Fragment>
