@@ -167,7 +167,10 @@ export default function editarCapComic() {
             <Stack direction="row">
                 <div class="JalaPoFavo">
                     <Button variant="contained" color="success">
-                        Guardar cambios
+                        Guardar nuevos datos
+                    </Button>
+                    <Button variant="outlined" color="error" id="Eliminarcomic">
+                        Eliminar comic
                     </Button>
                 </div>
             </Stack>
