@@ -1,6 +1,7 @@
 //manten este documento lo mas chico posible, solo usalo para iniciar la app y apuntar (de ahi index)
 const express = require('express');  //tengo que tenerlo para decirle a la app para que se conporte como una aplicacion de express
 const bodyParser = require("body-parser"); //libreria que ayuda a convertir json a objetos
+const cors = require('cors');
 require('./src/models/connection'); //necesito conectarme a la base de datos
 
 
@@ -24,7 +25,7 @@ const port = 5000; //5000  //5001
 
 app.use(bodyParser.json());
 //app.use(express.bodyParser()) //Alternativa sin externos
-
+app.use(cors());
 
 //aqui vamos poniendo los router de acuerdo a los modelos que yo tengo
 app.use('/api', usuario_router); //y asi para definir las rutas----!

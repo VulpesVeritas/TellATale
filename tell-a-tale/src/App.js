@@ -28,29 +28,29 @@ function App() {
       <Router>
         <PrimarySearchAppBar>
           <Routes>
-            <Route exact path="/" component={Index} />
-            <Route exact path="/IniciarSesion" component={IniciarSesion} />
+            <Route exact path="/" element={<Index/>} />
+            <Route exact path="/IniciarSesion" element={<IniciarSesion/>} />
             <Route exact path="/Registrarse" element={<Registrarse/>} />
-            <Route exact path="/Genero" component={Genero} />
+            <Route exact path="/Genero" element={<Genero/>} />
 
-            <Route exact path="/CrearComic" component={CrearComic}/>
-            <Route exact path="/EditarComic" component={EditarComic}/>
-            <Route exact path="/CrearCapComic" component={SubirCapComic}/>
-            <Route exact path="/EditarCapitulo" component={EditarCapitulo}/>
+            <Route exact path="/CrearComic" element={<CrearComic/>}/>
+            <Route exact path="/EditarComic" element={<EditarComic/>}/>
+            <Route exact path="/CrearCapComic" element={<SubirCapComic/>}/>
+            <Route exact path="/EditarCapitulo" element={<EditarCapitulo/>}/>
 
-            <Route exact path="/Perfil" component={HistoriasSubidas}/>
-            <Route exact path="/Favoritos" component={Favoritos} />
+            <Route exact path="/Perfil" element={<HistoriasSubidas/>}/>
+            <Route exact path="/Favoritos" element={<Favoritos/>} />
 
-            <Route exact path="/Comic" component={Comic}/>
-            <Route exact path="/LeerComic" component={LeerComic}/>
+            <Route exact path="/Comic" element={<Comic/>}/>
+            <Route exact path="/LeerComic" element={<LeerComic/>}/>
 
-            <Route exact path="/Ajustes" component={Ajustes}/>
+            <Route exact path="/Ajustes" element={<Ajustes/>}/>
 
-            <Route exact path="/AgregarModerador" component={AgregarModerador}/>            
-            <Route exact path="/HistoriasPendientesDeAprobar" component={HistoriasPendientesDeAprobar}/>            
-            <Route exact path="/HistoriaARevisar" component={HistoriaARevisar}/>            
+            <Route exact path="/AgregarModerador" element={<AgregarModerador/>}/>            
+            <Route exact path="/HistoriasPendientesDeAprobar" element={<HistoriasPendientesDeAprobar/>}/>            
+            <Route exact path="/HistoriaARevisar" element={<HistoriaARevisar/>}/>            
 
-            <Route exact path="/Notificaciones" component={Notificaciones}/>
+            <Route exact path="/Notificaciones" element={<Notificaciones/>}/>
             
           </Routes>
         </PrimarySearchAppBar>

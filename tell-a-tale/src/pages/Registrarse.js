@@ -15,9 +15,18 @@ export default function Registrarse() {
         nombre:"",
         correo:"",
         contrasena:"",
-        tipoUsuario: false,
+        tipo: false,
         listaSeguidos: []
     });
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        console.log(e.target.value);
+        setUsuario({
+            ...usuario,
+            [name]:value
+        });
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -25,6 +34,7 @@ export default function Registrarse() {
        await CreateUsuario(usuario);
     }
     return (
+        <form onSubmit = {handleSubmit}>
         <div class="ContenedorRegistrarse">
              <div class="SegundoContenedorRegistrarse">
                 <Box id="CajaDeDatos"
@@ -38,13 +48,17 @@ export default function Registrarse() {
                     <div>
                         <TextField
                             required
+                            name = "nombre"
                             id="standard-required"
                             label="Nombre de Usuario"
                             defaultValue=" "
                             variant="standard"
+                            value={usuario.nombre} 
+                            onChange = {handleChange}
                         />
                         <TextField
                             required
+                            name = "apodo"
                             id="standard-required"
                             label="Apodo"
                             defaultValue=" "
@@ -52,28 +66,36 @@ export default function Registrarse() {
                         />
                         <TextField
                             required
+                            name = "correo"
                             id="standard-required"
                             label="Correo"
                             defaultValue=" "
                             variant="standard"
+                            value={usuario.correo} 
+                            onChange = {handleChange}
                         />
                         <TextField
+
+                            name = "contrasena"
                             id="standard-password-input"
                             label="Contraseña"
                             type="password"
                             autoComplete="current-password"
                             variant="standard"
+                            value={usuario.contrasena} 
+                            onChange = {handleChange}
                         />
                     </div>
                 </Box>
                 <Stack direction="row">
                         <div class="JalaPoFavo registrarse">
-                            <Button variant="contained" color="success">
+                            <Button type = "submit" variant="contained" color="success">
                                 Registrarse
                             </Button>
                         </div>
                     </Stack>
             </div>
         </div>
+        </form>
     )
 }
