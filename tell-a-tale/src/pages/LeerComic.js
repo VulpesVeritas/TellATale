@@ -8,11 +8,6 @@ import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 
 export default function LeerComic() {
-    const [value, setValue] = React.useState('Controlled');
-
-    const handleChange = (event) => {
-        setValue(event.target.value);
-    };
 
     return (
         <div class="ContenedorLeerComic">
@@ -43,7 +38,7 @@ export default function LeerComic() {
                                 label="Escribe lo que piensas"
                                 multiline
                                 rows={3}
-                                defaultValue="Default Value"
+                                defaultValue=" "
                                 variant="filled"
                             />
                         </div>

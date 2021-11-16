@@ -12,6 +12,7 @@ import HistoriasSubidas from './pages/Perfil'
 import Notificaciones from './pages/Notificaciones'
 import CrearComic from './pages/CrearComic'
 import SubirCapComic from './pages/CrearCapComic'
+import EditarCapitulo from './pages/editarCapComic'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -30,6 +31,7 @@ function App() {
             <Route exact path="/CrearComic" component={CrearComic}/>
             <Route exact path="/EditarComic" component={EditarComic}/>
             <Route exact path="/CrearCapComic" component={SubirCapComic}/>
+            <Route exact path="/EditarCapitulo" component={EditarCapitulo}/>
 
             <Route exact path="/Perfil" component={HistoriasSubidas}/>
             <Route exact path="/Favoritos" component={Favoritos} />

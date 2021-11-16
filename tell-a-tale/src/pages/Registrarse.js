@@ -24,21 +24,21 @@ export default function Registrarse() {
                             required
                             id="standard-required"
                             label="Nombre de Usuario"
-                            defaultValue="Hello World"
+                            defaultValue=" "
                             variant="standard"
                         />
                         <TextField
                             required
                             id="standard-required"
                             label="Apodo"
-                            defaultValue="Hello World"
+                            defaultValue=" "
                             variant="standard"
                         />
                         <TextField
                             required
                             id="standard-required"
                             label="Correo"
-                            defaultValue="Hello World"
+                            defaultValue=" "
                             variant="standard"
                         />
                         <TextField
