@@ -2,73 +2,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 @media only screen and (max-width: 991px) {
-    .cardMod{
-        width: 500px;
+    .cardModComic{
+        width: 60vw;
         background-color: #160526;
-        padding: 5px;
+        padding: 1vw;
         border-radius: 10px;
         margin: 0px 0px 4px 0px;
     }
     
-    .IMGCard{
-        width: 140px;
-        height: 140px;
+    .IMGCardComic{
+        width: 10vw;
+        height: 10vw;
         float: left;
         margin: 0px;
     }
-    .ContentCard{
-        width: 350px;        
-        padding-left: 10px;
-        height: 140px;
+    .ContentCardComic{
+        width: 48.5vw;       
+        height: 10vw; 
+        padding-left: 1vw;
         background-color:#240940;
         float: right;
+        display: flex;
+        align-items: center;
     }
-    .Title{
+    .TituloCap{
         font-weight: bold;
-        font-size: 22px;
-        color:rgb(233, 233, 233);
-    }
-    .Desc{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        margin: 0%;
+        font-size: 2vw;
         color:rgb(233, 233, 233);
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .cardMod{
-        width: 30vw;
+    .cardModComic{
+        width: 35vw;
         background-color: #160526;
         padding: 0.5vw;
         border-radius: 10px;
         margin: 0px 5px 0px 0px;
     }
     
-    .IMGCard{
-        width: 7vw;
-        height: 7vw;
+    .IMGCardComic{
+        width: 5vw;
+        height: 5vw;
         float: left;
         margin: 0px;
     }
-    .ContentCard{
-        width: 22vw;
+    .ContentCardComic{
+        display: flex;
+        align-items: center;
+        width: 29.5vw;
         padding-left: 0.5vw;
-        height: 7vw;
+        height: 5vw;
         background-color:#240940;
         float: right;
     }
-    .Title{
+    .TituloCap{
+        margin: 0vw 1vw;
         font-weight: bold;
         font-size: 1.25vw;
         color:rgb(233, 233, 233);
-    }
-    .Desc{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 0.8vw;
-        margin: 0%;
-        color: rgb(233, 233, 233);
-
     }
 }
 

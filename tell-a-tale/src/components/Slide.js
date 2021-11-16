@@ -60,45 +60,47 @@ const Slide = () => {
         }, 4000);
 
         //Eliminar intervalo
-        slideshow.current.addEventListener('mouseenter', ()=>{
+        slideshow.current.addEventListener('mouseenter', () => {
             clearInterval(intervaloSlodeShow.current);
         });
 
         //Volver a poner el intervalo
-        slideshow.current.addEventListener('mouseleave', ()=>{
+        slideshow.current.addEventListener('mouseleave', () => {
             intervaloSlodeShow.current = setInterval(() => {
                 siguiente();
             }, 4000);
         });
     }, []);
     return (
-        <div class="ContenedorPrincipal">
-            <div class="ContenedorSlideShow" ref={slideshow}>
-                <div class="Slide">
-                    <a href="https://www.google.com/">
-                        <img class="IMGSlider" src={img1} alt="" />
-                    </a>
+        <div class="bodySlide">
+            <div class="ContenedorPrincipal">
+                <div class="ContenedorSlideShow" ref={slideshow}>
+                    <div class="Slide">
+                        <a href="https://www.google.com/">
+                            <img class="IMGSlider" src={img1} alt="" />
+                        </a>
+                    </div>
+                    <div class="Slide">
+                        <a href="https://www.google.com/">
+                            <img class="IMGSlider" src={img2} alt="" />
+                        </a>
+                    </div>
+                    <div class="Slide">
+                        <a href="https://www.google.com/">
+                            <img class="IMGSlider" src={img3} alt="" />
+                        </a>
+                    </div>
                 </div>
-                <div class="Slide">
-                    <a href="https://www.google.com/">
-                        <img class="IMGSlider" src={img2} alt="" />
-                    </a>
-                </div>
-                <div class="Slide">
-                    <a href="https://www.google.com/">
-                        <img class="IMGSlider" src={img3} alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="Controles">
+                <div class="Controles">
 
-                <button class="Boton-S izquierdo" onClick={anterior}>
-                    <FlechaIz />
-                </button>
-                <button class="Boton-S derecho" onClick={siguiente}>
-                    <FlechaDr />
-                </button>
+                    <button class="Boton-S izquierdo" onClick={anterior}>
+                        <FlechaIz />
+                    </button>
+                    <button class="Boton-S derecho" onClick={siguiente}>
+                        <FlechaDr />
+                    </button>
 
+                </div>
             </div>
         </div>
     );
