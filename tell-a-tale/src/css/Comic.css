@@ -178,9 +178,11 @@
         margin: auto;
         transform: translate(5vw, 2.8vw);
     }
+
     .NotaReporteComic{
         width: 70vw;
         margin: auto;
         transform: translate(0, -12vw);
     }
+    /*Este es el lugar donde las cosas comenzaron a salir mal*/
 }
