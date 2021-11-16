@@ -8,6 +8,11 @@ import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
 
 export default function LeerComic() {
+    const [value, setValue] = React.useState('Controlled');
+
+    const handleChange = (event) => {
+        setValue(event.target.value);
+    };
 
     return (
         <div class="ContenedorLeerComic">
