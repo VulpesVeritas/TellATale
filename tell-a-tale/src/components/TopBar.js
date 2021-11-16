@@ -165,8 +165,11 @@ export default function PrimarySearchAppBar(props) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
-           <img  class="Logo" src={logo} alt="Logo"/>
+        <Toolbar >
+          <a href="/">
+          <img class="Logo" src={logo} alt="Logo"/>
+          </a>
+           
           <Typography
             variant="h6"
             noWrap
@@ -202,8 +205,8 @@ export default function PrimarySearchAppBar(props) {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <button class="btnBarra" >Inicia sesion</button>
-            <button class="btnBarra" >Registrate</button>
+            <Link to="/IniciarSesion"><button class="btnBarra"  >Inicia sesion</button></Link>
+            <Link to="/Registrarse"><button class="btnBarra"  >Registrate</button></Link>
             <IconButton
               size="large"
               edge="end"
