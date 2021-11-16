@@ -38,6 +38,9 @@
 .Comentarios {
     background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
 }
+.ComentariosModerador {
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
 
 .EscribirComentario {
     width: max-content;
@@ -63,4 +66,19 @@
 
 .TextoPersonaComentario {
     font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (max-width: 991px) {
+    .ComentariosModerador {
+        transform: translate(0, -13vw);
+        padding-bottom: 10vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .ComentariosModerador {
+        transform: translate(0, -12vw);
+        padding-bottom: 5vw;
+
+    }
 }

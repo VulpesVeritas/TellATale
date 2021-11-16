@@ -16,6 +16,7 @@ import EditarCapitulo from './pages/editarCapComic'
 import Genero from './pages/Genero'
 import AgregarModerador from './pages/AgregarModerador'
 import HistoriasPendientesDeAprobar from './pages/HistoriasPendientesDeAprobar'
+import HistoriaARevisar from './pages/HistoriaARevisar'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Fragment } from 'react';
@@ -47,6 +48,7 @@ function App() {
 
             <Route exact path="/AgregarModerador" component={AgregarModerador}/>            
             <Route exact path="/HistoriasPendientesDeAprobar" component={HistoriasPendientesDeAprobar}/>            
+            <Route exact path="/HistoriaARevisar" component={HistoriaARevisar}/>            
 
             <Route exact path="/Notificaciones" component={Notificaciones}/>
             
