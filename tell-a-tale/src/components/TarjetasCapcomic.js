@@ -13,7 +13,6 @@ export default function TarjetasCapcomic(props) {
     if(props.page==="editarComic"){
         toDir="/EditarCapitulo";
     }
-    console.log(toDir);
     return (
         <div>
             <Card class="cardModComic" sx={{ maxWidth: 500 }}>
