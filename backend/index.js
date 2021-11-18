@@ -21,7 +21,7 @@ const notificacion_router = require('./src/routes/notificacionRouter');
 
 
 const app = express();
-const port = 5000; //5000  //5001
+const port = 3000; //5000  //5001
 
 app.use(bodyParser.json());
 //app.use(express.bodyParser()) //Alternativa sin externos
