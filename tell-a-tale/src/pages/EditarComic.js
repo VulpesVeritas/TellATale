@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import { useAutocomplete } from '@mui/base/AutocompleteUnstyled';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from "react-router-dom"
 
 /* Botones */
 const Input = styled('input')({
@@ -273,6 +274,7 @@ export default function EditarComic() {
             <div class="CapitulosEdit">
                 <h3>Capitulos del comic:</h3>
                 <ActionAreaCard
+                    page="editarComic"
                     imagen="https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"
                     titulo="El regreso del sanwich maldito parte 1"
                     descripcion="Callado en la playa,
@@ -282,10 +284,10 @@ export default function EditarComic() {
             </div>
             <Stack direction="row">
                 <div class="JalaPoFavo">
-                    <Button variant="contained" color="success">
+                    <Button variant="contained" color="success" id="guardarComic" component={Link} to="/Perfil">
                         Guardar nuevos datos
                     </Button>
-                    <Button variant="outlined" color="error" id="Eliminarcomic">
+                    <Button variant="outlined" color="error" id="Eliminarcomic" component={Link} to="/Perfil">
                         Eliminar comic
                     </Button>
                 </div>

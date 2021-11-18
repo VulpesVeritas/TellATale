@@ -8,10 +8,16 @@ import '../css/tarjetasCapcomic.css'
 import {Link} from "react-router-dom";
 
 export default function TarjetasCapcomic(props) {
+
+    let toDir="/LeerComic";
+    if(props.page==="editarComic"){
+        toDir="/EditarCapitulo";
+    }
+    console.log(toDir);
     return (
         <div>
             <Card class="cardModComic" sx={{ maxWidth: 500 }}>
-                <CardActionArea component={Link} to="/LeerComic">
+                <CardActionArea component={Link} to={toDir}>
                     <CardMedia
                         class="IMGCardComic"
                         component="img"

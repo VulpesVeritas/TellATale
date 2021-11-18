@@ -21,3 +21,7 @@ body{
 .btnBarra:hover{
     background-color: #321150;
 }
+
+#notificacion{
+    color: inherit;
+}

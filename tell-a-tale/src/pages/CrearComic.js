@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import { useAutocomplete } from '@mui/base/AutocompleteUnstyled';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from "react-router-dom";
 
 
 /* Botones */
@@ -270,7 +271,7 @@ export default function SubirComic() {
             </div>
             <Stack direction="row">
                 <div class="JalaPoFavo">
-                    <Button variant="contained" color="success">
+                    <Button id="btnCreaComic" variant="contained" color="success" component={Link} to="/Perfil">
                         Crear comic
                     </Button>
                 </div>

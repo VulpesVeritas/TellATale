@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import FeedbackIcon from '@mui/icons-material/Feedback';
 import '../css/TopBar.css';
 import logo from '../imagenes/Recurso2.png';
 import {Link} from "react-router-dom";
@@ -135,7 +136,7 @@ export default function PrimarySearchAppBar(props) {
         <p>Mensajes</p>
       </MenuItem>
       <MenuItem>
-        <IconButton
+        <IconButton 
           size="large"
           aria-label="show 17 new notifications"
           color="inherit"
@@ -192,10 +193,11 @@ export default function PrimarySearchAppBar(props) {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={0} color="error">
-                <MailIcon />
+                <FeedbackIcon />
               </Badge>
             </IconButton>
             <IconButton
+            id="notificacion"
               size="large"
               aria-label="show 17 new notifications"
               color="inherit"

@@ -77,7 +77,7 @@ export default function ComicEsp() {
                         
                     </Stack>
                     <Stack id="botonesCreador" direction="row" spacing={1} >
-                        <Button id="btnEditar" variant="contained" component={Link} to="/Perfil">
+                        <Button id="btnEditar" variant="contained" component={Link} to="/EditarComic">
                             Editar
                         </Button>
                         <Button id="btnCrearCap" variant="contained" component={Link} to="/CrearCapComic">
@@ -90,6 +90,7 @@ export default function ComicEsp() {
             <div class="Division"></div>
             <div class="Capitulos">
             <ActionAreaCard
+                    page="Comic"
                     imagen="https://ichef.bbci.co.uk/news/640/cpsprodpb/125FC/production/_103206257_sandwich.png"
                     titulo="El regreso del sanwich maldito parte 1"
                     descripcion="Callado en la playa,
