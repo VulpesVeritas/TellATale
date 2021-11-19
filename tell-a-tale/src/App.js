@@ -54,15 +54,12 @@ function App() {
             <Route exact path="/AgregarModerador" element={<AgregarModerador/>}/>            
             <Route exact path="/HistoriasPendientesDeAprobar" element={<HistoriasPendientesDeAprobar/>}/>            
             <Route exact path="/HistoriaARevisar" element={<HistoriaARevisar/>}/>            
-
-            <Route exact path="/AgregarModerador" component={AgregarModerador}/>            
-            <Route exact path="/HistoriasPendientesDeAprobar" component={HistoriasPendientesDeAprobar}/>            
-            <Route exact path="/HistoriaARevisar" component={HistoriaARevisar}/>            
-            <Route exact path="/ComicsConReporte" component={ComicsConReporte}/>            
-            <Route exact path="/ComicReportado" component={ComicReportado}/>            
-            <Route exact path="/ComentariosReportados" component={ComentariosReportados}/>            
-            <Route exact path="/ListaComicsEscondidos" component={ListaComicsEscondidos}/>            
-            <Route exact path="/ComicEscondido" component={ComicEscondido}/>            
+    
+            <Route exact path="/ComicsConReporte" element={ComicsConReporte}/>            
+            <Route exact path="/ComicReportado" element={ComicReportado}/>            
+            <Route exact path="/ComentariosReportados" element={ComentariosReportados}/>            
+            <Route exact path="/ListaComicsEscondidos" element={ListaComicsEscondidos}/>            
+            <Route exact path="/ComicEscondido" element={ComicEscondido}/>            
 
 
             <Route exact path="/Notificaciones" element={<Notificaciones/>}/>
