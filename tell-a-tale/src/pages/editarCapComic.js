@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import '../css/CrearCapComic.css'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -10,6 +10,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
+import {Link} from "react-router-dom"
 
 /* Galeria */
 const itemData = [
@@ -90,16 +91,84 @@ const Input = styled('input')({
     display: 'none',
 });
 
+const defaultSrc = "https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium";
 
-export default function editarCapComic() {
+const toBase64 = (file) => new Promise(( res, rej)=>{
+    const reader  = new FileReader();
+    reader.readAsDataURL(file);
+
+    reader.onloadend = e=>{
+        res(reader.result);
+    };
+});
+
+const ImageCard = ({data, idx, onClickClose})=>{
+    return(
+        <ImageListItem>
+            <img
+                src     ={data.src}
+                srcSet  ={data.src}
+                alt={data.title}
+                loading="lazy"
+            />
+            <ImageListItemBar
+                title={data.title}
+                actionIcon={
+                    <IconButton
+                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                        aria-label={data.title}
+                        onClick={()=>onClickClose(idx)}
+                    >
+                        <DeleteIcon />
+                    </IconButton>
+                }
+            />
+        </ImageListItem>
+    );
+};
+
+export default function EditarCapComic() {
+
+    const [preview, setPreview] = useState(defaultSrc);
+
+    const onChangeImg = async e =>{
+        const src = await toBase64(e.target.files[0]);
+        setPreview(src);
+    };
+
+    const [previewArr, setPreviewArr] = useState([]);
+
+    const cambiarImagenes = async e =>{
+        console.log("aqui si es");
+        const promiseArr    = Array.from(e.target.files).map((src)=>toBase64(src));
+        console.log(promiseArr);
+        const base64s       = await Promise.all(promiseArr);
+
+        const temp = [];
+
+        for( let i = 0; i < base64s.length; i++ ){
+            temp.push( { title: e.target.files[i].name, src: base64s[i]});
+        }
+        
+        setPreviewArr([...previewArr, ...temp]);
+    };
+
+    useEffect(()=>console.log(previewArr),[previewArr])
+
+    const onClickClose = (idx)=>{
+        const arr1 = previewArr.slice(0, idx);
+        const arr2 = previewArr.slice(idx+1);
+        setPreviewArr([...arr1, ...arr2]);
+    };
+
     return (
         <div class="Contenedor">
             <div class="imagenes">
                 <div class="Perfil">
-                    <img class="imgPerfil" src="https://pbs.twimg.com/media/FEAcm-jUcAAh5Cr?format=jpg&name=medium" alt="Imagen de perfil"></img>
+                    <img class="imgPerfil" src={preview} alt="Imagen de perfil"></img>
                     <Stack direction="row" alignItems="center" spacing={2}>
                         <label class="JalaPoFavo " htmlFor="contained-button-file">
-                            <Input accept="image/*" id="contained-button-file" multiple type="file" />
+                            <Input accept="image/*" id="contained-button-file" multiple type="file" onChange={onChangeImg}/>
                             <Button variant="contained" component="span">
                                 Miniatura
                             </Button>
@@ -129,48 +198,30 @@ export default function editarCapComic() {
             </div>
             <div class="ListaImagenes">
                 <Stack direction="row" alignItems="center" spacing={2}>
-                    <label class="JalaPoFavo" htmlFor="contained-button-file">
-                        <Input accept="image/*" id="contained-button-file" multiple type="file" />
-                        <Button variant="contained" component="span">
-                            Seleccionar
-                        </Button>
+                    <label class="JalaPoFavo" htmlFor="f">
+                            <Input accept="image/*" id="f" multiple type="file" 
+                                onChange={ cambiarImagenes }/>
+                            <Button variant="contained" component="span" >
+                                Seleccionar
+                            </Button>
                     </label>
                 </Stack>
                 <ImageList >
                     <ImageListItem key="Subheader" cols={2}>
                     </ImageListItem>
 
-                    {itemData.map((item) => (
-                        <ImageListItem key={item.img}>
-                            <img
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                            />
-                            <ImageListItemBar
-                                title={item.title}
-                                subtitle={item.author}
-                                actionIcon={
-                                    <IconButton
-                                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                        aria-label={`info about ${item.title}`}
-                                    >
-                                        <DeleteIcon />
-                                    </IconButton>
-                                }
-                            />
-                        </ImageListItem>
-                    ))}
+                    {
+                        previewArr.map((el, i)=><ImageCard key={i} idx={i} data={el} onClickClose={onClickClose}/>)
+                    }
                 </ImageList>
             </div>
             <Stack direction="row">
                 <div class="JalaPoFavo">
-                    <Button variant="contained" color="success">
+                    <Button id="guardaCambios" variant="contained" color="success" component={Link} to="/EditarComic">
                         Guardar nuevos datos
                     </Button>
-                    <Button variant="outlined" color="error" id="Eliminarcomic">
-                        Eliminar comic
+                    <Button id="EliminarCap" variant="outlined" color="error"  component={Link} to="/EditarComic">
+                        Eliminar capitulo
                     </Button>
                 </div>
             </Stack>

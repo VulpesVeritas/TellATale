@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 
-.MuiButton-contained:hover{
-    /*background-color: #240940 !important;*/
-}
+/*.MuiButton-contained:hover{
+    background-color: #240940 !important;
+}*/
 
 *{
     font-family: 'Open Sans', sans-serif;
+}
+
+#subirComic,#guardaCambios{
+    color: white;
+}
+#EliminarCap{
+    color:rgb(236, 92, 67);
 }
 
 .JalaPoFavo {
